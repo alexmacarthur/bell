@@ -30,11 +30,13 @@ mix.options({
 
 mix
   .standaloneSass('assets/scss/style.scss', 'assets/css')
+  .js('assets/scripts/scripts.js', 'assets/scripts/scripts.min.js')
   .browserSync({
     proxy: false,
     server: true,
     files: [
-      'assets/css/*.css'
+      'assets/css/*.css',
+      'assets/scripts/scripts.min.js'
     ]
   });
 

@@ -3,13 +3,13 @@
 
 <head>
 
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Fredoka+One" as="style" onload="this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:image" content="https://macarthur.me/bell/assets/img/og-logo.jpg">
+  <meta property="og:image" content="https://macarthur.me/bell/assets/img/open-graph.jpg">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Happy Marriage, Isabella!">
   <meta property="og:url" content="http://macarthur.me/bell">
@@ -17,9 +17,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Happy Marriage, Isabella!">
   <meta name="twitter:description" content="Hope it's as weird as you are.">
-  <meta name="twitter:image" content="https://macarthur.me/bell/assets/img/og-logo.jpg">
+  <meta name="twitter:image" content="https://macarthur.me/bell/assets/img/open-graph.jpg">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109541450-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,30 +30,46 @@
 
   <title>Happy Marriage, Isabella!</title>
 
-  <script>
-  /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
-
-  /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
-  </script>
-
 </head>
 
 <body>
 
   <main>
 
-  <h1>Happy Marriage, Isabella!</h1>
+    <div class="wrapper">
 
-  <div class="video-container">
-    <iframe width="1000" height="563" src="https://www.youtube.com/embed/ufO7eIlr-5s" frameborder="0" allowfullscreen></iframe>
-  </div>
+      <h1>Happy Marriage, Isabella!</h1>
 
-  <h2>Hope it's as weird as you are.</h2>
-  <h3>w/ love, Alex</h3>
+      <div class="video">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ufO7eIlr-5s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <h2>Hope it's as weird as you are.</h2>
+
+      <h3>w/ love, Alex</h3>
+
+      <hr/>
+
+      <h3>Share the love.</h3>
+
+      <ul class="social">
+        <li id="shareFacebook">
+          <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1376 128q119 0 203.5 84.5t84.5 203.5v960q0 119-84.5 203.5t-203.5 84.5h-188v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-532q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960z"/></svg>
+        </li>
+
+        <li id="shareTwitter">
+          <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1408 610q-56 25-121 34 68-40 93-117-65 38-134 51-61-66-153-66-87 0-148.5 61.5t-61.5 148.5q0 29 5 48-129-7-242-65t-192-155q-29 50-29 106 0 114 91 175-47-1-100-26v2q0 75 50 133.5t123 72.5q-29 8-51 8-13 0-39-4 21 63 74.5 104t121.5 42q-116 90-261 90-26 0-50-3 148 94 322 94 112 0 210-35.5t168-95 120.5-137 75-162 24.5-168.5q0-18-1-27 63-45 105-109zm256-194v960q0 119-84.5 203.5t-203.5 84.5h-960q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z"/></svg>
+        </li>
+      </ul>
+
+    </div>
 
   </main>
 
+  <script async src="assets/scripts/scripts.min.js"></script>
+
 </body>
+
 </html>

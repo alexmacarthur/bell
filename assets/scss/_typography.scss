@@ -8,16 +8,25 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 3rem;
   color: $gray--dark;
   font-weight: normal;
 }
 
 h1 {
   font-size: 4rem;
+  font-weight: normal;
+  margin-top: 0;
+
+  @include media($small) {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 0;
 }
