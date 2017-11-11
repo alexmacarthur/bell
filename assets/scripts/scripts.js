@@ -7,7 +7,7 @@ document.getElementById('shareFacebook').addEventListener('click', () => {
 
 document.getElementById('shareTwitter').addEventListener('click', () => {
   window.open(
-    `http://twitter.com/home?status=${encodeURIComponent('Happy Marriage, Isabella! Hope it\'s as weird as you are. ')}${encodeURIComponent(window.location.href)}`,
+    `http://twitter.com/intent/tweet?text=${encodeURIComponent('Happy Marriage, Isabella! Hope it\'s as weird as you are. ')}${encodeURIComponent(window.location.href)}`,
     'sharer',
     'toolbar=0,status=0,width=626,height=436');
 });
