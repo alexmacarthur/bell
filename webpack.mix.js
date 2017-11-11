@@ -19,7 +19,12 @@ mix.webpackConfig({
 
 mix.options({
   processCssUrls: false,
-  uglify: false
+  uglify: false,
+  postCss: [
+    require('autoprefixer')({
+      browsers: ['last 5 versions']
+    })
+  ]
 });
 
 /*
@@ -29,7 +34,7 @@ mix.options({
  */
 
 mix
-  .standaloneSass('assets/scss/style.scss', 'assets/css')
+  .sass('assets/scss/style.scss', 'assets/css')
   .js('assets/scripts/scripts.js', 'assets/scripts/scripts.min.js')
   .browserSync({
     proxy: false,
