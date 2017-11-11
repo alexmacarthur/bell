@@ -50,14 +50,20 @@ main {
   justify-content: center;
   list-style: none;
 
-  li + li{
-    padding-left: .5rem;
+  li {
+    width: 35px;
+    height: 35px;
+
+    & + li {
+      margin-left: .5rem;
+    }
   }
 
   svg {
+    fill: $gray--dark;
+    display: block;
     width: 35px;
     height: 35px;
-    fill: $gray--dark;
   }
 }
 
